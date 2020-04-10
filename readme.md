@@ -6,6 +6,41 @@ Library by Alex Merced of AlexMercedCoder.com (AlexMercedCoder.com/jslib)
 
 Alex Merced first created a front-end UI library using the Web Component API called MercedUI that gives you many of the features developers are used to in frameworks like React. Although, the Web Component API is still not fully supported in all browsers which is why the default is still to use frameworks like React, Angular and Vue. Is to make use of these frameworks often needs lots of tooling, transpilation, etc. to get full benefit from. mBlock is meant to provide features like reactive state props but in a form that doesn't need transpilation, the web component API or other tooling to get started.
 
+## Installation
+
+### CDN
+
+```
+<script src="http://www.alexmercedcoder.com/block.js" charset="utf-8" defer></script>
+```
+
+### NPM
+
+```
+npm i mblocks
+```
+
+in your javascript file
+
+```
+const {Block} = require("mblocks")
+```
+
+### ES6 Module
+
+index.html
+
+```
+<script type="module" src="app.js" charset="utf-8" defer></script>
+```
+
+app.js
+
+```
+import {Block} from "http://www.alexmercedcoder.com/blockmodule.js"
+
+```
+
 ## Getting started
 
 Essentially all you need in your HTML to get started
