@@ -107,11 +107,15 @@ state: the initial state which can be changed triggering a re-render with an cal
 
 id: the id of the individual instance
 
-there are two function you should define...
+there are fours function you should define...
 
 builder(state, props) => a function that is passed the state and props objects and returns the template string to be rendered
 
-assemble() => a function to run the constructors on any custom components included in your template
+assemble(state, props) => a function to run the constructors on any custom components included in your template
+
+mount(state, props) => is run on the initial mounting of the component
+
+update(state, props) => is run on every update triggered by setState
 
 -   When the setState function is run it updates the state, then re-reruns the builder function, then the assemble is function is run to rebuild any custom components in your template.
 

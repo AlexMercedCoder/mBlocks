@@ -22,24 +22,26 @@ class Block {
         this.props = captureProps(this.block);
         this.state = config.state;
         this.rend();
+        this.mount(this.state, this.props);
     }
 
     rend() {
         this.props = captureProps(this.block);
         this.block.innerHTML = this.builder(this.state, this.props);
-        this.assemble();
+        this.assemble(this.state, this.props);
     }
+
+    mount(state, props) {}
+
+    update(state, props) {}
 
     builder(state, props) {}
 
-    assemble() {}
+    assemble(state, props) {}
 
     setState(newState) {
         this.state = newState;
         this.rend();
+        this.update(this.state, this.props);
     }
 }
-
-module.exports = {
-    Block
-};
