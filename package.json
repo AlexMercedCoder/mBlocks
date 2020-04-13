@@ -1,6 +1,6 @@
 {
     "name": "mblocks",
-    "version": "1.0.2",
+    "version": "1.0.3",
     "description": "Library by Alex Merced of AlexMercedCoder.com (AlexMercedCoder.com/jslib)",
     "main": "blocknpm.js",
     "scripts": {

@@ -40,7 +40,7 @@ export class Block {
     assemble(state, props) {}
 
     setState(newState) {
-        this.state = newState;
+        this.state = { ...this.state, ...newState };
         this.rend();
         this.update(this.state, this.props);
     }
