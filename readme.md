@@ -11,14 +11,21 @@ Alex Merced first created a front-end UI library using the Web Component API cal
 ### CDN
 
 ```
-<script src="http://www.alexmercedcoder.com/block.js" charset="utf-8" defer></script>
+<script src="https://res.cloudinary.com/dithdroai/raw/upload/v1609693921/libraries/block_y8xutn.js" charset="utf-8" defer></script>
 ```
+### Webpack Build
 
+using webpack template
+
+```
+npx create-mblocks-app projectName
+```
 ### NPM
 
 ```
 npm i mblocks
 ```
+
 
 in your javascript file
 
@@ -37,7 +44,7 @@ index.html
 app.js
 
 ```
-import {Block} from "http://www.alexmercedcoder.com/blockmodule.js"
+import {Block} from "https://res.cloudinary.com/dithdroai/raw/upload/v1609693921/libraries/blockmodule_vdhqao.js"
 
 ```
 
